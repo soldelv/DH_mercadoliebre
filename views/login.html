@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles_login.css">
+</head>
+<body>
+	<!-- HEARDER -->
+	<header>
+		<!-- Logo -->
+		<div class="top-header">
+			<div class="logo"> 
+				<img src="img/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" width="350">
+			</div>
+			</div>
+
+		<section>
+			<!-- Barra de busqueda -->
+			<form class="search_bar"> 
+				<div class="submit"></div><input type="search" id="query" name="q" placeholder="Buscar productos, marcas y más">
+				<i class="fa fa-search"></i></div>
+			</form>
+
+			<p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+		</section>
+
+		<nav>
+			<ul>
+				<li><a href="#">Ofertas</a></li>
+				<li><a href="#">Tiendas Oficiales</a></li>
+				<li><a href="#">Vender</a></li>
+				<li><a href="#">Ayuda</a></li>
+			</ul>
+			<ul>
+				<li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+				<li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+				<li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+			</ul>
+		</nav>
+
+		<div class="burger-menu">
+			<i class="fa fa-bars burger"></i>
+		</div>
+    </header>
+
+    <main>
+
+		<section class="body_login">
+			<form action="/login" method="POST">
+
+				<div>
+					<br><label for="nombre"> </label>
+					<input type="text" name="nombre_usuario" id="nombre usuario" placeholder="Nombre de usuario">
+	
+				</div>
+	
+				<div>
+					<br><label for="nombre"> </label>
+					<input type="password" pattern=".{6,}"  placeholder="Contraseña"><br>
+				</div>
+	
+			</form>
+	
+			<form method="get" action="/index">
+				<br><button type="submit">Enviar</button>
+			</form>
+		</section>
+
+
+    </main>
+
+    <footer>
+            
+    </footer>
+    
+</body>
+</html>
