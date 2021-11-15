@@ -52,30 +52,27 @@
 		<section class="body_login">
 			<form action="/login" method="POST">
 
-				<div>
-					<br><label for="nombre"> </label>
+				<div class = "input_form" >
 					<input type="text" name="nombre_usuario" id="nombre usuario" placeholder="Nombre de usuario">
 	
 				</div>
 	
-				<div>
-					<br><label for="nombre"> </label>
+				<div class = "input_form">
 					<input type="password" pattern=".{6,}"  placeholder="Contraseña"><br>
 				</div>
 	
 			</form>
 	
-			<form method="get" action="/index">
-				<br><button type="submit">Enviar</button>
-			</form>
+			<div class="boton_log">
+                <a class="boton_form" href="/home" style="text-decoration:none" >Enviar</a>
+            </div><br>
+
 		</section>
 
 
     </main>
 
-    <footer>
-            
-    </footer>
+
     
 </body>
 </html>

@@ -1,5 +1,4 @@
 *{
-    margin: 0px; 
     box-sizing: border-box;
 }
 
@@ -13,7 +12,7 @@ h3{
 }
 
 p{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 div.top-header{
@@ -32,16 +31,34 @@ header{
     background-color: #EAC926;
 }
 
-.datos_personales{
+.input_form{
+    text-align: center;
+    margin: 25px 10px 25px 10px;
+    padding: 6px;
+    font-weight: 250;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid white;
+
+}
+
+input{
+    border: none;
+    text-align: center;
+}
+
+.perfil_usuario{
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-    padding:5px 5px;
+    margin-top: 5px;
+    padding:5px;
 }
 
 .info_perfil{
-    margin-left: 30px;
-    padding:5px 5px;
+    margin: 15px;
+    padding-left: 20px;
+
 }
 
 .titulo_dato{
@@ -49,4 +66,59 @@ header{
     margin: 10px;
     padding: 10px;
 
+}
+
+.input_pw{
+    text-align: center;
+    margin: 12px 10px 12px 10px;
+    padding: 6px;
+    font-weight: 250;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid white;
+
+}
+
+.boton_reg{
+    text-align: center;
+    margin: 10px;
+    padding: 7px  7px;
+    font-weight: 250;
+    font-size: 15px;
+    background-color: #5C93E1;
+    border-radius: 6px;
+    border: 1px solid #5C93E1;
+}
+
+.boton_form:visited {
+    
+    color: white;
+    text-decoration: none;
+    
+}
+
+.titulo_footer{
+    font-weight: bold;
+}
+footer{
+    background-color: white;
+    text-align:center;
+    font-size: 13px;
+}
+
+
+
+.fa-user-shield, .fa-gift, .fa-credit-card{
+    font-size: 2em;
+    margin: 5px;
+    background-color:white;
+    color:blue;
+}
+
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
 }

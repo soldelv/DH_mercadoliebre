@@ -108,23 +108,11 @@ div.offers{
 
 .discount{
     width: 70%;
-}
-
-.discount,
-.description{
     font-size: 16px;
     font-weight: normal;
 }
 
-h3,
-.description{
-    color: #666;
-}
 
-.description{
-    display: none;
-    margin-top: 20px;
-}
 
 section.banner img{
     width: 100%;
@@ -175,6 +163,22 @@ article div.main-article{
     border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+    transition: display .5s;
+    margin-top: 20px;
+}
+
+.main-article:hover .description{
+    display: block;
+  }
+
+h3{
+    color: #666;
 }
 
 @media (min-width: 361px){

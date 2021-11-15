@@ -37,3 +37,63 @@ header{
     text-align: center;
 
 }
+
+.input_form{
+    text-align: center;
+    margin: 15px 10px 15px 10px;
+    padding: 6px;
+    font-weight: 250;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid white;
+
+}
+
+input{
+    border: none;
+    text-align: center;
+}
+
+.boton_log{
+    text-align: center;
+    margin: 10px;
+    padding: 7px  7px;
+    font-weight: 250;
+    font-size: 15px;
+    background-color: #5C93E1;
+    border-radius: 6px;
+    border: 1px solid #5C93E1;
+}
+
+.boton_form:visited {
+    
+    color: white;
+    text-decoration: none;
+    
+}
+
+.titulo_footer{
+    font-weight: bold;
+}
+footer{
+    background-color: white;
+    text-align:center;
+    font-size: 13px;
+}
+
+
+
+.fa-user-shield, .fa-gift, .fa-credit-card{
+    font-size: 2em;
+    margin: 5px;
+    background-color:white;
+    color:blue;
+}
+
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}

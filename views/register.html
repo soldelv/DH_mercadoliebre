@@ -49,41 +49,36 @@
 
     <main>
         <form action="/registro" method="POST">
-            <section class="datos_personales">
-                <div>
-                    <br><label for="nombre"> </label>
+            <section>
+                <div class="input_form">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
     
-                </div>
+                </div >
     
-                <div>
-                    <br><label for="nombre_usuario"> </label>
+                <div class="input_form">
                     <input type="text" name="nombre_usuario" id="nombre usuario" placeholder="Nombre de usuario">
     
                 </div>
     
-                <div>
-                    <br><label for="mail"> </label>
+                <div class="input_form">
                     <input type="text" name="mail" id="email" placeholder="E-mail">
     
                 </div>
-    
-                <div class="titulo_dato">
-                    <label for="fecha_nac">Fecha de nacimiento</label><br>
-                    <br><input type="date" id="start" name="fecha_nac"
+                <label class="titulo_dato" for="fecha_nac">Fecha de nacimiento</label>
+                <div class="input_form" >
+                    <input type="date" id="start" name="fecha_nac"
                         value="yyyy-dd-mm"
                         min="yyyy-01-01" max="yyyy-12-31">
     
                 </div>
     
-                <div>
-                    <br><label for="domicilio"> </label>
+                <div class="input_form">
                     <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
     
                 </div>
-    
-                <div >
-                    <label class="titulo_dato" for="perfil-usuario"> Perfil de usuario</label><br>
+
+                <label class="titulo_dato" for="perfil-usuario"> Perfil de usuario</label>
+                <div class="perfil_usuario"> 
                     <input type="radio" name="perfil-usuario" value="comprador"> <label for="comprador">Comprador</label>
                     <input type="radio" name="perfil-usuario" value="vendedor"><label for="vendedor">Vendedor</label>
     
@@ -92,9 +87,9 @@
             
         </form>
         
-        <section class="info_perfil">
-            <div >
-                <label class="titulo_dato" for="nombre"> Intereses</label><br>
+        <section >
+            <label class="titulo_dato" for="nombre"> Intereses</label><br>
+            <div class="info_perfil">
                 <input type="checkbox" name="interes" value="Electro"><label for="Electro">Electro</label><br>
                 <input type="checkbox" name="interes" value="Moda"><label for="Electro">Moda</label><br>
                 <input type="checkbox" name="interes" value="hogar"><label for="Electro">Hogar</label><br>
@@ -102,38 +97,61 @@
                 <input type="checkbox" name="interes" value="vidasana"><label for="Electro">Vida sana</label><br>
             </div>
 
-            <div >
-                <label class="titulo_dato" for="nombre"> Foto de usuario</label>
+            <label class="titulo_dato" for="nombre"> Foto de usuario</label>
+            <div class="info_perfil">
                 <input type="file" name="imagen1" />
                 <input type="submit" name="subir-imagen" value="" />
             </div>
 
-            <div >
-                <label class="titulo_dato" for="nombre"> Contraseña</label><br>
+            <label class="titulo_dato" for="nombre"> Contraseña</label>
+            <div class="input_pw">
                 <input type="password" pattern=".{6,}">
             </div>
 
-            <div >
-                <label class="titulo_dato" for="nombre">Confirmar contraseña</label><br>
+            <label class="titulo_dato" for="nombre">Confirmar contraseña</label>
+            <div class="input_pw">
                 <input type="confpassword" pattern=".{6,}">
             </div>
 
-            <form method="get" action="/index">
-                <button type="submit">Enviar</button><br>
-                <button type="reset">Borrar todo</button>
-            </form>
+            <div class="boton_reg" >
+                <a class="boton_form" href="/home" style="text-decoration:none">Enviar</a>
 
-            
+            </div>
+            <div class="boton_reg" >
+                <a class="boton_form" href="/home"style="text-decoration:none" >Borrar todo</a>
 
+            </div><br>
 
         </section>
         
 
     </main>
 
-    <footer>
-            
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <section>
+        <i class="far fa-credit-card"></i>
+        <p class="titulo_footer">Pagá con tarjeta o en efectivo</p>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!</p>
+    </section>
+    <section>
+        <i class="fas fa-gift"></i>
+        <p class="titulo_footer">Envío gratis desde $ 2.500</p>
+        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+    </section>
+    <section>
+        <i class="fas fa-user-shield"></i>
+        <p class="titulo_footer">Seguridad, de principio a fin</p>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.</p>
+    </section>
+    <section>
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L</p>
+    </section>
+</footer>
+
     
 </body>
 </html>
